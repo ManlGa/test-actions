@@ -13,9 +13,9 @@ jobs:
         with:
           script: |
 
-          github.rest.issues.createComment({
-            owner: ManlGa,
-            repo: test_actions,
-            issue_number: 0,
-            body: Not a single issue detected
-          })
+            github.rest.issues.createComment({
+              owner: ManlGa,
+              repo: test_actions,
+              issue_number: 0,
+              body: Not a single issue detected
+            })
