@@ -12,19 +12,10 @@ jobs:
         use: actions/github-script@v7
         with:
           script: |
-          const output =  
-          
-          <details><summary>Show Plan</summary>
-  
-            \`\`\`\n
-            ${{ context.autor }}
-            \`\`\`
-  
-            </details>
-          github.rest.issues.createComment{
-            owner: ManlGa
-            repo: test_actions
-            issue_number: 0
-            body: output
-  
-          }
+
+          github.rest.issues.createComment({
+            owner: ManlGa,
+            repo: test_actions,
+            issue_number: 0,
+            body: Not a single issue detected
+          })
