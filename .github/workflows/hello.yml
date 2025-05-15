@@ -9,7 +9,7 @@ jobs:
       - name: say hello
         run: echo "Hello"
       - name: create a comment in Issues.
-        use: actions/github-script@v7
+        uses: actions/github-script@v7
         with:
           script: |
 
