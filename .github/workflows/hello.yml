@@ -14,8 +14,8 @@ jobs:
           script: |
 
             github.rest.issues.createComment({
-              owner: "ManlGa",
+              owner: "manlga",
               repo: "test_actions",
-              issue_number: 0,
-              body: "Not a single issue detected"
+              issue_number: 1,
+              body: "¿Have you tried to add an issue with that number?"
             })
