@@ -1,8 +1,5 @@
 name: Trigger when opening an issue
-on:
-  issues:
-    types:
-      - opened
+on: workflow_dispatch
 
 jobs:
   first-job:
