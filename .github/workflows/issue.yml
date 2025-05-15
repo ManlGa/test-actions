@@ -5,7 +5,8 @@ on:
       - opened
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: says_hello
-      run: echo "An issue was opened"
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: says_hello
+        run: echo "An issue was opened"
