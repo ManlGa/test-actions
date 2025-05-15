@@ -1,0 +1,11 @@
+name: Trigger when opening an issue
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: says_hello
+      run: echo "An issue was opened"
